@@ -1,8 +1,19 @@
 .footer {
-  position: relative;
   background-color: #1C2225;
   border-top: 1px solid rgba(252, 249, 249, 0.10);
   padding-top: 40px;
+  padding-bottom: 292px;
+  background-image: url(../img/footer/ornament-footer-mobile.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 212px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .footer {
+    background-image: url(../img/footer/ornament-footer-mobile@2x.png);
+  }
 }
 .footer-list {
   display: flex;
@@ -43,6 +54,16 @@
 @media (min-width: 768px) {
   .footer {
     padding-bottom: 40px;
+    background-image: url(../img/footer/ornament-footer-tablet.png);
+    background-position: right;
+    background-size: contain;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .footer {
+      background-image: url(../img/footer/ornament-footer-tablet.png);
+    }
   }
   .footer-list {
     gap: 25px;
@@ -81,6 +102,16 @@
 }
 
 @media (min-width: 1280px) {
+  .footer {
+    background-image: url(../img/footer/ornament-footer-desk.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .footer {
+      background-image: url(../img/footer/ornament-footer-desk@2x.png);
+    }
+  }
   .footer-list {
     margin-bottom: 117px;
   }
@@ -88,5 +119,18 @@
     width: 754px;
     font-size: 64px;
     line-height: 1.16;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    background-image: url(../img/footer/ornament-footer-big-desk.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .footer {
+      background-image: url(../img/footer/ornament-footer-big-desk@2x.png);
+    }
   }
 }
