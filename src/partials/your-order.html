@@ -1,3 +1,56 @@
 <section class="your-order">
-  <h2>Your order</h2>
+  <div class="container your-order-container">
+    <h2 class="your-order-title">
+      <span class="your-order-span">Your order</span> is our priority:
+      Personalized approach and quality of service
+    </h2>
+    <form class="modal-form" name="reviews-form" autocomplete="off">
+      <div class="form-box">
+        <label class="form-label" for="user-name">Name</label>
+        <div class="form-field">
+          <input
+            class="form-input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            minlength="2"
+            placeholder="Enter your full name"
+            pattern="[A-Z]{1}[a-z]{6}"
+          />
+        </div>
+      </div>
+      <div class="form-box">
+        <label class="form-label" for="user-Email">Email</label>
+        <div class="form-field">
+          <input
+            class="form-input"
+            type="text"
+            name="user-Email"
+            id="user-Email"
+            minlength="2"
+            placeholder="Enter your email"
+            pattern="^([a-z.]+@[a-z.]+\.[a-z.]+)$"
+          />
+        </div>
+      </div>
+      <div class="form-comment-box">
+        <label class="form-label" for="user-comment"></label>
+        <textarea
+          class="form-comment"
+          name="user-comment"
+          id="user-comment"
+          rows="4"
+          placeholder="Comment"
+          required
+          minlength="7"
+        ></textarea>
+      </div>
+      <button class="modal-button-form" type="submit" data-modal-send>
+        Send
+        <svg class="form-icon" width="26" height="10">
+          <use href="./images/icons.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
 </section>

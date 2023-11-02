@@ -1,4 +1,31 @@
 .your-order {
-  padding: 20px 0;
-  background-color: rgb(249, 176, 81);
+  padding: 150px 0;
+  background-color: #1C2225;
+
 }
+
+.container {}
+
+.your-order-container {}
+
+.your-order-title {}
+
+.your-order-span {}
+
+.modal-form {}
+
+.form-box {}
+
+.form-label {}
+
+.form-field {}
+
+.form-input {}
+
+.form-icon {}
+
+.form-comment-box {}
+
+.form-comment {}
+
+.modal-button-form {}
