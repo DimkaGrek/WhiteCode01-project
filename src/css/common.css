@@ -19,6 +19,11 @@
     padding: 0 100px;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
 
 .visually-hidden {
   position: absolute;
