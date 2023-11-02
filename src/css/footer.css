@@ -77,16 +77,16 @@
   .footer-item:first-child {
     margin-right: 0;
   }
-  .about-us-item {
+  .footer-about-us-item {
     order: 1;
   }
-  .customer-order-item {
+  .footer-customer-order-item {
     order: 3;
   }
-  .our-collection-item {
+  .footer-our-collection-item {
     order: 2;
   }
-  .testimonials-item {
+  .footer-testimonials-item {
     order: 4;
   }
   .footer-text {
