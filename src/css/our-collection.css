@@ -49,6 +49,13 @@
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .our-collection {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
 .our-collection-title {
   font-size: 32px;
   font-weight: 500;
@@ -82,6 +89,25 @@
 
 .our-collection-image {
   border-radius: 4px;
+  height: 430px;
+}
+
+@media only screen and (min-width: 768px) {
+  .our-collection-image {
+    width: 342px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .our-collection-image {
+    width: 347px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .our-collection-image {
+    width: 400px;
+  }
 }
 
 .our-collection-item {
