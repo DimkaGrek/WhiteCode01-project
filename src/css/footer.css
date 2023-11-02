@@ -93,6 +93,7 @@
     width: 521px;
     font-size: 54px;
     line-height: 1.19;
+    letter-spacing: -1.62px;
   }
   .footer-ornament-container {
     position: absolute;
@@ -124,6 +125,7 @@
     width: 754px;
     font-size: 64px;
     line-height: 1.16;
+    letter-spacing: -1.92px;
   }
 }
 
