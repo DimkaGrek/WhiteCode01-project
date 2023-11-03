@@ -1,42 +1,94 @@
 <section class="hero">
-  <h1 class="hero-title">
-    Reviving the traditional
-    <span class="hero-span">Ukrainian</span> artistry in every stitch.
-  </h1>
-  <svg class="" width="52" height="51">
-    <use href="./img/icons.svg#icon-emblems"></use>
-  </svg>
-  <p class="hero-descr">all embroidery is made by hand</p>
-  <a class="order-link" href="#"
-    ><button class="hero-btn" type="button">
-      ORDER
-      <svg class="hero-icon" width="26" height="10">
-        <use href="./img/icons.svg#icon-arrow"></use>
+  <div class="hero-container container">
+    <div class="hero-wrapper">
+      <div class="hero-title-container">
+        <h1 class="hero-title">
+          Reviving the traditional
+          <span class="hero-span">Ukrainian</span> artistry in every stitch.
+        </h1>
+        <a class="order-link" href="#your-order"
+          >ORDER
+          <span class="hero-span-icon">
+            <svg class="hero-icon" width="31" height="15">
+              <use href="./img/icons.svg#icon-arrow"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+      <picture>
+        <!-- Desktop -->
+        <source
+          media="(min-width:1280px)"
+          srcset="
+            ./img/hero/desktop/girl_desk.jpg    1x,
+            ./img/hero/desktop/girl_desk@2x.jpg 2x
+          "
+        />
+        <!-- Tablet -->
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./img/hero/tablet/girl_tab.jpg    1x,
+            ./img/hero/tablet/girl_tab@2x.jpg 2x
+          "
+        />
+        <!-- Mobile -->
+        <source
+          media="(max-width:767.98px)"
+          srcset="
+            ./img/hero/mobile/girl_mob.jpg    1x,
+            ./img/hero/mobile/girl_mob@2x.jpg 2x
+          "
+        />
+        <img
+          class="hero-img"
+          src="./img/hero/desktop/girl_desk.jpg"
+          alt="Girl"
+          width="335"
+          height="545"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+    <div class="hero-descr-container">
+      <svg class="hero-icon star-icon" width="52" height="51">
+        <use href="./img/icons.svg#icon-emblems"></use>
       </svg>
-    </button>
-  </a>
-  <picture>
-    <!-- Mobile -->
-    <source
-      media="(max-width:767.98px)"
-      srcset="./img/hero/photo-hero.jpg 1x, ./img/hero/photo-hero@2x.jpg 2x"
-    />
-    <img
-      class="hero-img"
-      src="./img/hero/photo-hero.jpg"
-      alt="Girl"
-      width="335"
-      height="535"
-      loading="lazy"
-    />
-  </picture>
-  <img
-    class="hero-map-img"
-    srcset="./img/hero/map-ukr.png 1x, ./img/hero/map-ukr@2x.png 2x"
-    src="./img/hero/map-ukr.png"
-    alt="Map"
-    width="139"
-    height="197"
-    loading="lazy"
-  />
+      <p class="hero-descr">all embroidery is made by hand</p>
+    </div>
+    <picture>
+      <!-- Desktop 1440px -->
+      <source
+        media="(min-width:1440px)"
+        srcset="
+          ./img/hero/map_ukraine_desk1440.png    1x,
+          ./img/hero/map_ukraine_desk1440@2x.png 2x
+        "
+      />
+      <!-- Desktop 1280px -->
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          ./img/hero/desktop/map_ukraine_desk1280.png    1x,
+          ./img/hero/desktop/map_ukraine_desk1280@2x.png 2x
+        "
+      />
+      <!-- Tablet -->
+      <source
+        media="(min-width:768px)"
+        srcset="
+          ./img/hero/tablet/map_ukraine_tab.png    1x,
+          ./img/hero/tablet/map_ukraine_tab@2x.png 2x
+        "
+      />
+      <img
+        class="hero-map-img"
+        src="./img/hero/map_ukraine_desk1440.png"
+        alt="Map"
+        width="139"
+        height="197"
+        loading="lazy"
+      />
+    </picture>
+  </div>
 </section>
