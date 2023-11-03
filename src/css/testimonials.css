@@ -64,6 +64,11 @@
     width: 396px;
   }
 }
+.testimonials-item-one,
+.testimonials-item-two,
+.testimonials-item-three {
+  display: flex;
+}
 .testimonials-user-foto {
   position: absolute;
   transform: translateX(-50%) translateY(-24px);
