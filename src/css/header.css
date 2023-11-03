@@ -19,6 +19,63 @@
   height: 39px;
   margin-right: 87px;
 }
+@media only screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 440px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .header-logo {
+    margin-right: 60px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .header-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+}
+.header-menu-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: var(--white);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: var(--yellow);
+}
+
+@media only screen and (min-width: 1280px) {
+  .contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contacts-number {
+    display: flex;
+    padding: 14px 28px;
+    margin-right: 20px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.43;
+    color: var(--white);
+
+    border-radius: 15px;
+    border: 1px solid var(--white-header);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts-number:hover,
+  .contacts-number:focus {
+    border-color: var(--yellow);
+  }
+}
 .contacts-list {
   display: flex;
   gap: 12px;
@@ -42,6 +99,15 @@
 .contacts-icon {
   fill: currentColor;
 }
+@media only screen and (min-width: 1280px) {
+  .contacts-networks {
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts-networks:hover,
+  .contacts-networks:focus {
+    border-color: var(--yellow);
+  }
+}
 .menu-mobile {
   display: flex;
   align-items: center;
@@ -50,6 +116,11 @@
   display: flex;
   justify-content: flex-end;
   margin-left: auto;
+}
+@media only screen and (min-width: 1280px) {
+  .menu-btn-mobile {
+    display: none;
+  }
 }
 .menu-btn-mobile-open {
   width: 36px;
@@ -61,6 +132,14 @@
   background-color: inherit;
   color: var(--yellow);
 }
+@media only screen and (min-width: 768px) {
+  .menu-btn-mobile-open {
+    width: 44px;
+    height: 30px;
+  }
+}
 .menu-btn-mobile-icon {
+  width: 100%;
+  height: 100%;
   stroke: currentColor;
 }
