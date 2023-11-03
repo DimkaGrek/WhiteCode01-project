@@ -57,13 +57,17 @@
 @media only screen and (min-width: 1280px) {
   .testimonials-item-container {
     width: 343px;
-    height: 285px;
   }
 }
 @media only screen and (min-width: 1440px) {
   .testimonials-item-container {
     width: 396px;
   }
+}
+.testimonials-item-one,
+.testimonials-item-two,
+.testimonials-item-three {
+  display: flex;
 }
 .testimonials-user-foto {
   position: absolute;
