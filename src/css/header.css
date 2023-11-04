@@ -17,13 +17,8 @@
 .header-logo {
   width: 44px;
   height: 39px;
-  margin-right: 87px;
 }
-@media only screen and (min-width: 768px) {
-  .header-logo {
-    margin-right: 440px;
-  }
-}
+
 @media only screen and (min-width: 1280px) {
   .header-logo {
     margin-right: 60px;
@@ -49,13 +44,13 @@
   color: var(--yellow);
 }
 
-@media only screen and (min-width: 1280px) {
-  .contacts {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-  }
+
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
+
 @media only screen and (min-width: 1280px) {
   .contacts-number {
     display: flex;
@@ -92,12 +87,16 @@
   background-color: var(--white-header);
   color: var(--white);
   opacity: 0.8;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   border-radius: 15px;
   border: 1px solid var(--white-header);
 }
 .contacts-icon {
   fill: currentColor;
+}
+.contacts-networks:active {
+  border-color: var(--yellow);
 }
 @media only screen and (min-width: 1280px) {
   .contacts-networks {
@@ -113,9 +112,12 @@
   align-items: center;
 }
 .menu-btn-mobile {
-  display: flex;
-  justify-content: flex-end;
-  margin-left: auto;
+  margin-left: 12px;
+}
+@media only screen and (min-width: 768px) {
+  .menu-btn-mobile {
+    margin-left: 20px;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .menu-btn-mobile {
