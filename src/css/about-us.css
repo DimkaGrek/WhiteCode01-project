@@ -1,4 +1,136 @@
 .about-us {
-  padding: 20px 0;
-  background-color: rgb(247, 203, 145);
+  padding: 80px 20px 80px 20px;
+  background-color: #1C2225;;
+  display: block;
+ background-image: url(../img/about/ornament-about.png);
+    background-size: 459px 408px;
+    background-position: bottom right;
+      background-repeat: no-repeat;
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .about-us {
+    padding: 100px 0 32px 0;
+  }
+}
+
+/* Desktop 1280px */
+@media screen and (min-width: 1280px) {
+  .about-us {
+    padding: 150px 0 100px 0;
+  }
+}
+
+.about-title {
+  color: var(--white, #FCF9F9);
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.37;
+    letter-spacing: -0.03em;
+    padding-bottom: 40px;
+    max-width: 180px;
+    text-align: left;
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .about-title {
+  
+    font-size: 44px;
+    line-height: 1.45;
+    letter-spacing: -0.03em;
+  }
+}
+
+.about-container{
+  
+}
+
+.about-container-text {
+  padding-bottom: 50px;
+ 
+}
+
+.about-text {
+  width: 335px;
+  text-align: left;
+  color: rgba(252, 249, 249, 0.40);
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.04em;
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .about-text {
+width: 704px;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  }
+}
+/* Desktop 1280px */
+@media screen and (min-width: 1280px) {
+  .about-text{
+    width: 436px;
+      font-size: 16px;
+      letter-spacing: -0.04em;
+  }
+}
+
+.top-text{
+  margin-bottom: 20px;
+}
+.about-img {
+  border-radius: 4px;
+  
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .about-img{
+    width: 704px;
+  }
+}
+/* Desktop 1280px */
+@media screen and (min-width: 1280px) {
+.about-img{
+  width: 594px;
+}
+}
+/* Desktop 1440px */
+@media screen and (min-width: 1440px) {
+  .about-img {
+    width: 709px;
+  }
+}
+/* Mobile */
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+/* Desctop 1280 */
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
 }
