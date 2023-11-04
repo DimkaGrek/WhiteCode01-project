@@ -179,3 +179,39 @@
     right: 100px;
   }
 }
+/* Animations */
+.rotate-in-center {
+  animation: rotate-in-center 3s linear infinite;
+}
+@keyframes rotate-in-center {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.text-focus-in {
+  animation: text-focus-in 0.7s linear both;
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.flip-in-hor-bottom {
+  animation: flip-in-hor-bottom 0.7s linear both;
+}
+@keyframes flip-in-hor-bottom {
+  0% {
+    transform: rotateX(80deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}
