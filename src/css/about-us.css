@@ -1,16 +1,18 @@
 .about-us {
-  padding: 80px 20px 80px 20px;
+  padding: 0 0 80px 0;
   background-color: #1C2225;;
-  display: block;
+
  background-image: url(../img/about/ornament-about.png);
+   background-repeat: no-repeat;
     background-size: 459px 408px;
-    background-position: bottom right;
-      background-repeat: no-repeat;
+    background-position: bottom 18px left 125px;
+
 }
 /* Tablet */
 @media screen and (min-width: 768px) {
   .about-us {
-    padding: 100px 0 32px 0;
+    padding: 0 0 100px 0;
+    
   }
 }
 
@@ -22,6 +24,8 @@
 }
 
 .about-title {
+  margin: 0;
+  padding: 0;
   color: var(--white, #FCF9F9);
     font-family: Manrope;
     font-size: 32px;
@@ -32,6 +36,7 @@
     padding-bottom: 40px;
     max-width: 180px;
     text-align: left;
+
 }
 /* Tablet */
 @media screen and (min-width: 768px) {
@@ -44,20 +49,28 @@
 }
 
 .about-container{
-  
+display: flex;
+flex-direction: column;
+}
+@media screen and (min-width: 1280px){
+.about-container {
+  flex-direction: row;
+}
 }
 
 .about-container-text {
+  
   padding-bottom: 50px;
- 
 }
-
+@media screen and (min-width: 1280px) {
+  .about-container-text {
+  margin-right: 50px;
+  }
+}
 .about-text {
-  width: 335px;
+  
   text-align: left;
   color: rgba(252, 249, 249, 0.40);
-    font-family: Manrope;
-    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -66,8 +79,7 @@
 /* Tablet */
 @media screen and (min-width: 768px) {
   .about-text {
-width: 704px;
-  font-size: 16px;
+max-width: 704px;
   letter-spacing: -0.04em;
   }
 }
@@ -75,7 +87,7 @@ width: 704px;
 @media screen and (min-width: 1280px) {
   .about-text{
     width: 436px;
-      font-size: 16px;
+
       letter-spacing: -0.04em;
   }
 }
@@ -83,10 +95,19 @@ width: 704px;
 .top-text{
   margin-bottom: 20px;
 }
-.about-img {
+.about-img{
   border-radius: 4px;
   
 }
+/* max 320 */
+@media screen and (min-width: 375px){
+.about-img{
+  width: 335px;
+}
+}
+
+
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   .about-img{
@@ -103,34 +124,5 @@ width: 704px;
 @media screen and (min-width: 1440px) {
   .about-img {
     width: 709px;
-  }
-}
-/* Mobile */
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  padding: 0 auto;
-  margin: 0 auto;
-}
-
-/* Tablet */
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-}
-
-/* Desctop 1280 */
-@media only screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding: 0 100px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
   }
 }
