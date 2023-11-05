@@ -1,15 +1,8 @@
-<<<<<<< Updated upstream
-.your-order {
-  padding: 20px 0;
-  background-color: rgb(249, 176, 81);
-}
-=======
 .order {
   background-color: #1C2225;
   overflow: hidden;
   margin-bottom: 80px;
 }
-
 
 .order::before {
   content: "";
@@ -45,31 +38,38 @@
   display: flex;
 }
 
+@media screen and (min-width: 768px) {
+  .order-container {
+    flex-direction: column-reverse;
+  }
+
+}
+
+
+
 .order-top {
   margin-right: 50px;
   position: relative;
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 428px) {
   .order-top {
     display: none;
   }
 
 }
 
-
 .order-img {
   border-radius: 4px;
-  background: lightgray 50% / cover no-repeat;
   width: 524px;
   height: 521px;
 }
 
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
   .order-img {
     display: none;
   }
-}
+}*/
 
 .ornament-img {
   position: absolute;
@@ -190,10 +190,9 @@
 }
 
 .modal-button-form:active {
-  .border-color: var(--yellow);
+  border-color: var(--yellow);
 }
 
 .form-icon {
   fill: var(--yellow);
 }
->>>>>>> Stashed changes
