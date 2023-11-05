@@ -2,15 +2,15 @@
   padding: 0 20px;
   padding-bottom: 80px;
 
-  background-image: url(../img/collection/ornament-collection-mobile.png);
+  background-image: url(../img/collection/ornament-collection.png);
   background-repeat: no-repeat;
-  background-size: 72px 177px;
-  background-position: top 298px left;
+  background-size: 199px 177px;
+  background-position: top 298px right calc(50% + 215px);
 }
 
 @media only screen and (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
   .our-collection {
-    background-image: url(../img/collection/ornament-collection-mobile@2x.png);
+    background-image: url(../img/collection/ornament-collection@2x.png);
   }
 }
 
@@ -19,16 +19,8 @@
     padding: 0 32px;
     padding-bottom: 100px;
 
-    background-image: url(../img/collection/ornament-collection-tablet.png);
-    background-size: 114px 300px;
-    background-position: top 221px left;
-  }
-}
-
-@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
-  (min-width: 768px) and (min-device-pixel-ratio: 2) {
-  .our-collection {
-    background-image: url(../img/collection/ornament-collection-tablet@2x.png);
+    background-size: 338px 300px;
+    background-position: top 221px right calc(50% + 439px);
   }
 }
 
@@ -37,15 +29,7 @@
     padding: 0 98px;
     padding-bottom: 150px;
 
-    background-image: url(../img/collection/ornament-collection-desktop.png);
-    background-size: 169px 300px;
-  }
-}
-
-@media only screen and (min-width: 1280px) and (min-resolution: 192dpi),
-  (min-width: 1280px) and (min-device-pixel-ratio: 2) {
-  .our-collection {
-    background-image: url(../img/collection/ornament-collection-desktop@2x.png);
+    background-position: top 221px right calc(50% + 640px);
   }
 }
 
@@ -53,6 +37,8 @@
   .our-collection {
     padding-left: 100px;
     padding-right: 100px;
+
+    background-position: top 221px right calc(50% + 720px);
   }
 }
 
@@ -111,17 +97,24 @@
 }
 
 .our-collection-item {
+  width: 335px;
 }
 
 @media only screen and (min-width: 768px) {
   .our-collection-item {
-    width: calc((100% - 20px) / 2);
+    width: 342px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .our-collection-item {
-    width: calc((100% - 40px) / 3);
+    width: 347px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .our-collection-item {
+    width: 400px;
   }
 }
 
