@@ -17,7 +17,7 @@
     
     <title>Vyshyvanka Vibes</title>
     <script type="module" crossorigin src="/WhiteCode01-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/WhiteCode01-project/assets/index-2c58ead5.css">
+    <link rel="stylesheet" href="/WhiteCode01-project/assets/index-d6e0481a.css">
   </head>
   <body>
     <header class="header">
@@ -53,7 +53,7 @@
             class="contacts-networks"
           >
             <svg class="contacts-icon" width="28" height="28">
-              <use href="/WhiteCode01-project/assets/icons-41b8de92.svg#icon-facebook"></use>
+              <use href="/WhiteCode01-project/assets/icons-c120ed16.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -64,7 +64,7 @@
             class="contacts-networks"
           >
             <svg class="contacts-icon" width="28" height="28">
-              <use href="/WhiteCode01-project/assets/icons-41b8de92.svg#icon-instagram"></use>
+              <use href="/WhiteCode01-project/assets/icons-c120ed16.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -75,16 +75,21 @@
             class="contacts-networks"
           >
             <svg class="contacts-icon" width="28" height="28">
-              <use href="/WhiteCode01-project/assets/icons-41b8de92.svg#icon-youtube"></use>
+              <use href="/WhiteCode01-project/assets/icons-c120ed16.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
     </div>
     <div class="menu-btn-mobile">
-      <button class="menu-btn-mobile-open" type="button">
+      <button
+        class="menu-btn-mobile-open js-open-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
         <svg class="menu-btn-mobile-icon" width="36" height="24">
-          <use href="/WhiteCode01-project/assets/icons-41b8de92.svg#icon-menu-mobile"></use>
+          <use href="/WhiteCode01-project/assets/icons-c120ed16.svg#icon-menu-mobile"></use>
         </svg>
       </button>
     </div>
@@ -103,7 +108,7 @@
           >ORDER
           <span class="hero-span-icon">
             <svg class="hero-icon" width="26" height="10">
-              <use href="/WhiteCode01-project/assets/icons-41b8de92.svg#icon-arrow"></use>
+              <use href="/WhiteCode01-project/assets/icons-c120ed16.svg#icon-arrow"></use>
             </svg>
           </span>
         </a>
@@ -136,7 +141,7 @@
     </div>
     <div class="hero-descr-container">
       <svg class="hero-icon star-icon rotate-scale-up" width="52" height="51">
-        <use href="/WhiteCode01-project/assets/icons-41b8de92.svg#icon-emblems"></use>
+        <use href="/WhiteCode01-project/assets/icons-c120ed16.svg#icon-emblems"></use>
       </svg>
       <p class="hero-descr">all embroidery is made by hand</p>
     </div>
@@ -373,7 +378,7 @@
         <button class="modal-button-form" type="submit" data-modal-send>
           SEND
           <svg class="form-icon" width="26" height="10">
-            <use href="/WhiteCode01-project/assets/icons-41b8de92.svg#icon-arrow"></use>
+            <use href="/WhiteCode01-project/assets/icons-c120ed16.svg#icon-arrow"></use>
           </svg>
         </button>
       </form>
@@ -479,7 +484,49 @@
         </p>
     </div>
 </footer>
+    <div class="backdrop js-menu-container">
+  <div class="menu-container" id="mobile-menu">
+    <div class="mobile-buttons">
+      <button type="button" class="btn-tel">+380 (68) 443-94-26</button>
+      <button class="menu-toggle js-close-menu" type="button">
+        <svg class="btn-close-svg" width="36" height="36">
+          <use href="/WhiteCode01-project/assets/icons-c120ed16.svg#icon-close-black"></use>
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu">
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#about-us">About us</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#collection">Our collection</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#order">Customer order</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#testimonials">Testimonials</a>
+      </li>
+    </ul>
+
+    <img
+      src="../img/menu/menu-ornament.svg"
+      alt=""
+      class="ornament-svg"
+      width="340"
+    />
+  </div>
+</div>
+
 
     
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
