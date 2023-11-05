@@ -1,4 +1,128 @@
 .about-us {
-  padding: 20px 0;
-  background-color: rgb(247, 203, 145);
+  padding: 0 0 80px 0;
+  background-color: #1C2225;;
+
+ background-image: url(../img/about/ornament-about.png);
+   background-repeat: no-repeat;
+    background-size: 459px 408px;
+    background-position: bottom 18px left 125px;
+
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .about-us {
+    padding: 0 0 100px 0;
+    
+  }
+}
+
+/* Desktop 1280px */
+@media screen and (min-width: 1280px) {
+  .about-us {
+    padding: 150px 0 100px 0;
+  }
+}
+
+.about-title {
+  margin: 0;
+  padding: 0;
+  color: var(--white, #FCF9F9);
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.37;
+    letter-spacing: -0.03em;
+    padding-bottom: 40px;
+    max-width: 180px;
+    text-align: left;
+
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .about-title {
+  
+    font-size: 44px;
+    line-height: 1.45;
+    letter-spacing: -0.03em;
+  }
+}
+
+.about-container{
+display: flex;
+flex-direction: column;
+}
+@media screen and (min-width: 1280px){
+.about-container {
+  flex-direction: row;
+}
+}
+
+.about-container-text {
+  
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 1280px) {
+  .about-container-text {
+  margin-right: 50px;
+  }
+}
+.about-text {
+  
+  text-align: left;
+  color: rgba(252, 249, 249, 0.40);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.04em;
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .about-text {
+max-width: 704px;
+  letter-spacing: -0.04em;
+  }
+}
+/* Desktop 1280px */
+@media screen and (min-width: 1280px) {
+  .about-text{
+    width: 436px;
+
+      letter-spacing: -0.04em;
+  }
+}
+
+.top-text{
+  margin-bottom: 20px;
+}
+.about-img{
+  border-radius: 4px;
+  
+}
+/* max 320 */
+@media screen and (min-width: 375px){
+.about-img{
+  width: 335px;
+}
+}
+
+
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .about-img{
+    width: 704px;
+  }
+}
+/* Desktop 1280px */
+@media screen and (min-width: 1280px) {
+.about-img{
+  width: 594px;
+}
+}
+/* Desktop 1440px */
+@media screen and (min-width: 1440px) {
+  .about-img {
+    width: 709px;
+  }
 }
