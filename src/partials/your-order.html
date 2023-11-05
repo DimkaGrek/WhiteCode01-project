@@ -1,3 +1,68 @@
-<section class="your-order">
-  <h2>Your order</h2>
+<section class="order">
+  <!-- ::before -->
+  <div class="container order-container">
+    <div class="order-top">
+      <img class="order-img" src="../img/forms/photo-forms.jpg" alt="girl" />
+      <img
+        class="ornament-img"
+        src="./img/forms/ornament-forms.png"
+        alt="ornament"
+      />
+      <!-- ::after -->
+    </div>
+    <div class="order-bottom">
+      <h2 class="order-title">
+        <span class="order-span">Your order</span> is our priority: Personalized
+        approach and quality of service
+      </h2>
+      <form class="modal-form" name="reviews-form" autocomplete="off">
+        <div class="form-box">
+          <label class="form-label" for="user-name"></label>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              minlength="2"
+              placeholder="Enter your full name"
+              pattern="[A-Z]{1}[a-z]{6}"
+            />
+          </div>
+        </div>
+        <div class="form-box">
+          <label class="form-label" for="user-Email"></label>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="text"
+              name="user-Email"
+              id="user-Email"
+              minlength="2"
+              placeholder="Enter your email"
+              pattern="^([a-z.]+@[a-z.]+\.[a-z.]+)$"
+            />
+          </div>
+        </div>
+        <div class="form-comment-box">
+          <label class="form-label" for="user-comment"></label>
+          <textarea
+            class="form-comment"
+            name="user-comment"
+            id="user-comment"
+            rows="4"
+            placeholder="Comment"
+            required
+            minlength="7"
+          ></textarea>
+        </div>
+        <button class="modal-button-form" type="submit" data-modal-send>
+          SEND
+          <svg class="form-icon" width="26" height="10">
+            <use href="./img/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
 </section>
