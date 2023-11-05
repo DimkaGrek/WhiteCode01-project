@@ -1,0 +1,130 @@
+/* Mobile menu */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container {
+  position: relative;
+
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 274px;
+  height: 100vh;
+  padding: 20px 20px 0px 20px;
+  background-color: var(--yellow);
+
+  /* transform: translateX(100%); */
+
+  padding-bottom: 251px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-container {
+    width: 380px;
+    padding: 20px 32px 0px 32px;
+    padding-bottom: 364px;
+  }
+}
+
+/* .menu-container.is-open {
+  transform: translateX(0);
+} */
+.backdrop.is-open {
+  transform: translateX(0);
+}
+
+.mobile-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-tel {
+  padding: 12px 20px;
+
+  color: var(--black);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid rgba(28, 34, 37, 0.1);
+}
+@media only screen and (min-width: 768px) {
+  .btn-tel {
+    padding: 14px 28px;
+    font-size: 14px;
+    line-height: 1.43;
+  }
+}
+
+.menu-container .menu-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  border: 1px solid var(--CORNFLOWER);
+  border-radius: 50%;
+}
+.btn-close-svg {
+  fill: var(--black);
+}
+@media only screen and (min-width: 768px) {
+  .btn-close-svg {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.mobile-menu {
+  align-self: flex-end;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.mobile-menu-item {
+  text-align: right;
+}
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.mobile-menu-link {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  text-transform: uppercase;
+}
+
+.ornament-svg {
+  min-width: 340px;
+  min-height: 302px;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media only screen and (min-width: 768px) {
+  .ornament-svg {
+    min-width: 545px;
+    min-height: 484px;
+    bottom: -120px;
+  }
+}
