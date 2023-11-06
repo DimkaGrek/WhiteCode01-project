@@ -1,3 +1,63 @@
 <section class="about-us">
-  <h2>About us</h2>
+  <div class="about-container container">
+    <div class="about-container-text">
+      <h2 class="about-title container">About us</h2>
+      <p class="about-text top-text">
+        The store "Vyshyvanka Vibes" is a place where traditional Ukrainian
+        vyshyvanka comes to life with new zest and style. Our store offers a
+        wide selection of high-quality and authentic embroidery, which combines
+        the elegance of traditional needlework and modern design.
+      </p>
+      <p class="about-text">
+        In "Vyshyvanka Vibes" you will find various models of embroidery, from
+        classic to modern, corresponding to the latest fashion trends. Our
+        embroidery is made using natural fabrics and is embroidered by highly
+        qualified craftsmen who convey the beauty of Ukrainian culture in every
+        detail.We believe that vyshyvanka is not just clothing, but a symbol of
+        national pride, the heritage of our ancestors and a way of expressing
+        one's individuality. Each embroidery from "Vyshyvanka Vibes" has its own
+        unique history and symbolism, which gives it a special meaning.
+      </p>
+    </div>
+    <picture>
+      <!-- Desktop 1440px -->
+      <source
+        media="(min-width:1440px)"
+        srcset="
+          ./img/about/photo-about-desk1440.jpg    1x,
+          ./img/about/photo-about-desk1440@2x.jpg 2x
+        "
+      />
+      <!-- Desktop -->
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          ./img/about/photo-about-desk.jpg    1x,
+          ./img/about/photo-about-desk@2x.jpg 2x
+        "
+      />
+      <!-- Tablet -->
+      <source
+        media="(min-width:768px)"
+        srcset="
+          ./img/about/photo-about-tab.jpg    1x,
+          ./img/about/photo-about-tab@2x.jpg 2x
+        "
+      />
+      <!--Mobile-->
+      <source
+        media="(max-width:767.98px)"
+        srcset="
+          ./img/about/photo-about-mob.jpg    1x,
+          ./img/about/photo-about-mob@2x.jpg 2x
+        "
+      />
+      <img
+        class="about-img"
+        src="./img/about/photo-about-mob.jpg"
+        alt="vyshyvanka"
+        width="280"
+      />
+    </picture>
+  </div>
 </section>
