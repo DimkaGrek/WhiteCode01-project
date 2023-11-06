@@ -1,16 +1,16 @@
 .hero {
-  padding: 60px 0 80px 0;
+  padding: 48px 0 80px 0;
 }
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .hero {
-    padding: 106px 0 100px 0;
+    padding: 92px 0 100px 0;
   }
 }
 /* Desktop 1280px */
 @media only screen and (min-width: 1280px) {
   .hero {
-    padding: 100px 0 150px 0;
+    padding: 82px 0 150px 0;
   }
 }
 .hero-container {
@@ -29,7 +29,6 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    align-items: center;
     gap: 40px;
   }
 }
@@ -59,12 +58,14 @@
     font-size: 54px;
     line-height: 1.19;
     letter-spacing: -0.03em;
+    margin-bottom: 40px;
   }
 }
 /* Desktop 1280px */
 @media only screen and (min-width: 1280px) {
   .hero-title {
     max-width: 518px;
+    margin-top: 94px;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -73,6 +74,7 @@
     font-size: 64px;
     line-height: 1.16;
     letter-spacing: -0.03em;
+    margin-top: 66px;
   }
 }
 .hero-span {
@@ -99,7 +101,7 @@
     font-size: 16px;
     padding-left: 39px;
     padding-right: 39px;
-    margin-left: 173px;
+    margin-left: 141px;
   }
 }
 /* Desktop 1280px*/
@@ -132,36 +134,33 @@
     text-align: center;
     width: 115px;
     position: absolute;
-    top: -24px;
+    top: -22px;
     right: 32px;
   }
 }
 /* Desktop 1280px */
 @media only screen and (min-width: 1280px) {
   .hero-descr-container {
-    top: 75px;
+    top: 17px;
+    right: 100px;
   }
 }
-/* Desktop 1280px */
-@media only screen and (min-width: 1280px) {
+/* Desktop 1440px */
+@media only screen and (min-width: 1440px) {
   .hero-descr-container {
-    right: 100px;
+    top: 67px;
   }
 }
 .hero-descr {
   width: 115px;
   color: rgba(252, 249, 249, 0.4);
   font-size: 16px;
-  font-weight: 400;
   line-height: normal;
   letter-spacing: -0.04em;
+  margin-top: 10px;
 }
 /* Tablet */
 @media only screen and (min-width: 768px) {
-  .hero-img {
-    width: 413px;
-    height: 575px;
-  }
   .hero-map-img {
     display: block;
     position: absolute;
@@ -171,18 +170,14 @@
 }
 /* Desktop 1280px */
 @media only screen and (min-width: 1280px) {
-  .hero-img {
-    width: 392px;
-    height: 545px;
-  }
   .hero-map-img {
     right: 100px;
   }
 }
 /* Animations */
 .focus-in {
-  -webkit-animation: focus-in 0.7s linear both;
-  animation: focus-in 0.7s linear both;
+  -webkit-animation: focus-in 0.5s linear both;
+  animation: focus-in 0.5s linear both;
 }
 @-webkit-keyframes focus-in {
   0% {
@@ -241,8 +236,8 @@
   }
 }
 .flip-in-hor-bottom {
-  -webkit-animation: flip-in-hor-bottom 0.7s linear both;
-  animation: flip-in-hor-bottom 0.7s linear both;
+  -webkit-animation: flip-in-hor-bottom 0.5s linear both;
+  animation: flip-in-hor-bottom 0.5s linear both;
 }
 @-webkit-keyframes flip-in-hor-bottom {
   0% {
