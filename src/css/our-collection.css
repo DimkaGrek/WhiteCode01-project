@@ -2,15 +2,30 @@
   padding: 0 20px;
   padding-bottom: 80px;
 
-  background-image: url(../img/collection/ornament-collection.png);
+  background-image: url('../img/collection/ornament-collection.png');
   background-repeat: no-repeat;
   background-size: 199px 177px;
   background-position: top 298px right calc(50% + 215px);
 }
-
+/* .webp */
+@supports (
+  background-image: url('../img/collection/ornament-collection.webp')
+) {
+  .our-collection {
+    background-image: url('../img/collection/ornament-collection.webp');
+  }
+}
 @media only screen and (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
   .our-collection {
     background-image: url(../img/collection/ornament-collection@2x.png);
+  }
+  /* .webp */
+  @supports (
+    background-image: url('../img/collection/ornament-collection@2x.webp')
+  ) {
+    .our-collection {
+      background-image: url('../img/collection/ornament-collection@2x.webp');
+    }
   }
 }
 
