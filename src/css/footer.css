@@ -5,6 +5,7 @@
   padding-bottom: 292px;
   background-image: url(../img/footer/footer-ornament-mobile-tablet.png);
   background-position: center 175%;
+  background-size: 452px 401px;
   background-repeat: no-repeat;
 }
 @media (min-device-pixel-ratio: 2),
@@ -101,6 +102,7 @@
   .footer {
     background-image: url(../img/footer/footer-ornament-desk.png);
     background-position: top -60px left calc(50% + 600px);
+    background-size: 595px 528px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -122,6 +124,6 @@
 
 @media (min-width: 1440px) {
   .footer {
-    background-position: top -60px left calc(50% + 600px);
+    background-position: top -60px left calc(50% + 520px);
   }
 }
