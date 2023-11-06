@@ -2,16 +2,18 @@
   <!-- ::before -->
   <div class="container order-container">
     <div class="order-top">
-      <img class="order-img" src="../img/forms/photo-forms.jpg" alt="girl" />
       <img
-        class="ornament-img"
-        src="./img/forms/ornament-forms.png"
-        alt="ornament"
+        class="order-img"
+        src="./img/forms/photo-forms.jpg"
+        alt="girl"
+        width="638"
+        height="521"
+        loading="lazy"
       />
       <!-- ::after -->
     </div>
     <div class="order-bottom">
-      <h2 class="order-title">
+      <h2 class="order-title" id="order">
         <span class="order-span">Your order</span> is our priority: Personalized
         approach and quality of service
       </h2>
@@ -26,7 +28,8 @@
               id="user-name"
               minlength="2"
               placeholder="Enter your full name"
-              pattern="[A-Z]{1}[a-z]{6}"
+              ppattern="[a-zA-z]*\s[a-zA-z]*"
+              title="Name must contains two word separated by space"
             />
           </div>
         </div>

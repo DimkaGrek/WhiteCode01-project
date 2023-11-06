@@ -1,8 +1,13 @@
 .order {
+<<<<<<< Updated upstream
   padding: 80px 0;
   background-color: #2E2F42;
   overflow: hidden;
   background-color: #1c2225;
+=======
+  background-color: #1C2225;
+  margin-bottom: 80px;
+>>>>>>> Stashed changes
 }
 
 .order::before {
@@ -19,10 +24,20 @@
   background-size: contain;
 }
 
+.order {
+  background-image: url(../img/forms/elements.png);
+  background-repeat: no-repeat;
+  background-size: 545px 484px;
+  background-position: bottom 119px left -270px;
+}
+
+
+
 @media screen and (min-width: 768px) {
   .order::before {
     background-image: url("../img/woman-fon-tab.jpg");
     margin-bottom: 100px;
+    height: 776px;
   }
 
 }
@@ -31,6 +46,7 @@
   .order::before {
     background-image: url("../img/women-fon.jpg");
     margin-bottom: 150px;
+    height: 776px;
   }
 
 }
@@ -39,7 +55,7 @@
   display: flex;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .order-container {
     flex-direction: column-reverse;
   }
@@ -50,11 +66,15 @@
     flex-direction: row;
   }
 
+<<<<<<< Updated upstream
 }
 
+=======
+>>>>>>> Stashed changes
 .order-top {
-  margin-right: 50px;
-  position: relative;
+  padding: 0 20px;
+  padding-bottom: 80px;
+
 }
 
 @media screen and (max-width: 428px) {
@@ -62,25 +82,66 @@
     display: none;
   }
 }
+<<<<<<< Updated upstream
 
 @media screen and (min-width: 768px) and (max-width:1279px) {
   .order-top {
     margin-left: auto;
   }
+=======
+>>>>>>> Stashed changes
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .order-top {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .order-top {
+    margin-right: 50px;
+  }
 }
 
 .order-img {
   border-radius: 4px;
-  width: 524px;
-  height: 521px;
 }
 
+<<<<<<< Updated upstream
 .ornament-img {
   position: absolute;
   left: -25%;
   bottom: -25%;
+=======
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .order-img {
+    display: none;
+  }
 }
+
+@media screen and (min-width: 1280px) {
+  .order-img {
+    width: 524px;
+    height: 521px;
+  }
+}
+
+/*.ornament-img {
+  position: absolute;
+  left: -50%;
+  bottom: 0;
+}*/
+
+.ornament-img::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 483px;
+  left: -50%;
+  bottom: -50%;
+>>>>>>> Stashed changes
+}
+
 
 @media screen and (max-width: 767px) {
   .ornament-img {
@@ -110,7 +171,6 @@
   line-height: 1.38;
   letter-spacing: -0.96px;
   width: 100%;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -146,6 +206,14 @@
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--white_50);
+}
+
+@media screen and (min-width: 320px) {
+  .form-input {
+    width: 284px;
+  }
+
 }
 
 .form-input:focus {
@@ -158,6 +226,14 @@
   }
 }
 
+.form-input:focus {
+  border: 1px solid rgba(252, 249, 249, 0.60);
+}
+
+.form-comment-box {
+  margin-bottom: 40px;
+}
+
 .form-comment {
   color: rgba(252, 249, 249, 0.50);
   font-size: 16px;
@@ -166,7 +242,6 @@
   border-radius: 8px;
   border: 1px solid rgba(252, 249, 249, 0.10);
   height: 168px;
-  margin-bottom: 40px;
   background-color: transparent;
   padding: 8px 16px;
   outline: transparent;
@@ -174,14 +249,25 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+<<<<<<< Updated upstream
 .form-comment:focus {
   border: 1px solid rgba(252, 249, 249, 0.60);
+=======
+@media screen and (min-width: 320px) {
+  .form-comment {
+    width: 284px;
+  }
+>>>>>>> Stashed changes
 }
 
 @media screen and (min-width: 768px) {
   .form-comment {
     width: 476px;
   }
+}
+
+.form-comment:focus {
+  border: 1px solid rgba(252, 249, 249, 0.60);
 }
 
 .modal-button-form {
@@ -209,5 +295,9 @@
 
 .form-icon {
   fill: var(--yellow);
+<<<<<<< Updated upstream
   transform: rotate(330deg);
+=======
+  transform: rotate(3 deg);
+>>>>>>> Stashed changes
 }
