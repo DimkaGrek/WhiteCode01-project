@@ -1,20 +1,26 @@
-<header class="header">
+<header class="header header-fixed">
   <div class="container menu-mobile">
     <nav class="header-nav">
       <a href="./index.html" class="header-logo">
-        <img src="./img/logo.svg" alt="logo" class="header-img" />
+        <img
+          src="./img/logo.svg"
+          alt="logo"
+          width="44"
+          height="39"
+          class="header-img"
+        />
       </a>
       <ul class="header-menu">
-        <li class="header-menu-li">
+        <li class="header-menu-li animated1 fadeInLeft">
           <a href="#about-us" class="header-menu-link">About us</a>
         </li>
-        <li class="header-menu-li">
+        <li class="header-menu-li animated2 fadeInLeft">
           <a href="#collection" class="header-menu-link">Our collection </a>
         </li>
-        <li class="header-menu-li">
+        <li class="header-menu-li animated3 fadeInLeft">
           <a href="#order" class="header-menu-link">Customer order</a>
         </li>
-        <li class="header-menu-li">
+        <li class="header-menu-li animated4 fadeInLeft">
           <a href="#testimonials" class="header-menu-link">Testimonials</a>
         </li>
       </ul>
@@ -60,7 +66,12 @@
       </ul>
     </div>
     <div class="menu-btn-mobile">
-      <button class="menu-btn-mobile-open" type="button">
+      <button
+        class="menu-btn-mobile-open js-open-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
         <svg class="menu-btn-mobile-icon" width="36" height="24">
           <use href="./img/icons.svg#icon-menu-mobile"></use>
         </svg>

@@ -1,8 +1,7 @@
 .order {
-  padding: 80px 0;
-  background-color: #2E2F42;
+  background-color: #1C2225;
   overflow: hidden;
-  background-color: #1c2225;
+  margin-bottom: 80px;
 }
 
 .order::before {
@@ -10,10 +9,10 @@
   display: block;
   width: 100%;
   height: 550px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 
   background-color: #e2e2e2;
-  background-image: url("../img/women-fon.jpg");
+  background-image: url("../img/woman-fon-mob.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -32,6 +31,94 @@
     background-image: url("../img/women-fon.jpg");
     margin-bottom: 150px;
   }
+
+}
+
+.order-container {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .order-container {
+    flex-direction: column-reverse;
+  }
+
+}
+
+
+
+.order-top {
+  margin-right: 50px;
+  position: relative;
+}
+
+@media screen and (max-width: 428px) {
+  .order-top {
+    display: none;
+  }
+
+}
+
+.order-img {
+  border-radius: 4px;
+  width: 524px;
+  height: 521px;
+}
+
+/*@media screen and (max-width: 767px) {
+  .order-img {
+    display: none;
+  }
+}*/
+
+.ornament-img {
+  position: absolute;
+  left: -25%;
+  bottom: -25%;
+}
+
+@media screen and (max-width: 767px) {
+  .ornament-img {
+    display: none;
+  }
+}
+
+
+.order-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 335px;
+
+}
+
+@media screen and (min-width: 768px) {
+  .order-bottom {
+    width: 542px;
+  }
+}
+
+.order-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.38;
+  letter-spacing: -0.96px;
+  width: 100%;
+
+}
+
+@media screen and (min-width: 768px) {
+  .order-title {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.32;
+    letter-spacing: -1.32px;
+  }
+}
+
+.order-span {
+  color: #ECD979;
+}
 
 }
 
