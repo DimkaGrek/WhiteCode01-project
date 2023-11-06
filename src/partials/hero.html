@@ -17,32 +17,71 @@
       </div>
       <picture>
         <!-- Desktop -->
+        <!-- .webp -->
+        <source
+          media="(min-width:1280px)"
+          srcset="
+            ./img/hero/desktop/woman_desk.webp    1x,
+            ./img/hero/desktop/woman_desk@2x.webp 2x
+          "
+          type="image/webp"
+          width="392"
+          height="545"
+        />
+        <!-- .jpg -->
         <source
           media="(min-width:1280px)"
           srcset="
             ./img/hero/desktop/woman_desk.jpg    1x,
             ./img/hero/desktop/woman_desk@2x.jpg 2x
           "
+          type="image/jpg"
           width="392"
           height="545"
         />
         <!-- Tablet -->
+        <!-- .webp -->
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./img/hero/tablet/woman_tab.webp    1x,
+            ./img/hero/tablet/woman_tab@2x.webp 2x
+          "
+          type="image/webp"
+          width="413"
+          height="575"
+        />
+        <!-- .jpg -->
         <source
           media="(min-width:768px)"
           srcset="
             ./img/hero/tablet/woman_tab.jpg    1x,
             ./img/hero/tablet/woman_tab@2x.jpg 2x
           "
+          type="image/jpg"
           width="413"
           height="575"
         />
         <!-- Mobile -->
+        <!-- .webp -->
+        <source
+          media="(max-width:767.98px)"
+          srcset="
+            ./img/hero/mobile/woman_mob.webp    1x,
+            ./img/hero/mobile/woman_mob@2x.webp 2x
+          "
+          type="image/webp"
+          width="335"
+          height="545"
+        />
+        <!-- .jpg -->
         <source
           media="(max-width:767.98px)"
           srcset="
             ./img/hero/mobile/woman_mob.jpg    1x,
             ./img/hero/mobile/woman_mob@2x.jpg 2x
           "
+          type="image/jpg"
           width="335"
           height="545"
         />
@@ -63,28 +102,61 @@
     </div>
     <picture>
       <!-- Desktop 1440px -->
+      <!-- .webp -->
+      <source
+        media="(min-width:1440px)"
+        srcset="
+          ./img/hero/map_ukraine_desk1440.webp    1x,
+          ./img/hero/map_ukraine_desk1440@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <!-- .png -->
       <source
         media="(min-width:1440px)"
         srcset="
           ./img/hero/map_ukraine_desk1440.png    1x,
           ./img/hero/map_ukraine_desk1440@2x.png 2x
         "
+        type="image/png"
       />
       <!-- Desktop 1280px -->
+      <!-- .webp -->
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          ./img/hero/desktop/map_ukraine_desk1280.webp    1x,
+          ./img/hero/desktop/map_ukraine_desk1280@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <!-- .png -->
       <source
         media="(min-width:1280px)"
         srcset="
           ./img/hero/desktop/map_ukraine_desk1280.png    1x,
           ./img/hero/desktop/map_ukraine_desk1280@2x.png 2x
         "
+        type="image/png"
       />
       <!-- Tablet -->
+      <!-- .webp -->
+      <source
+        media="(min-width:768px)"
+        srcset="
+          ./img/hero/tablet/map_ukraine_tab.webp    1x,
+          ./img/hero/tablet/map_ukraine_tab@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <!-- .png -->
       <source
         media="(min-width:768px)"
         srcset="
           ./img/hero/tablet/map_ukraine_tab.png    1x,
           ./img/hero/tablet/map_ukraine_tab@2x.png 2x
         "
+        type="image/png"
       />
       <img
         class="hero-map-img flip-in-hor-bottom"
@@ -92,7 +164,6 @@
         alt="Map"
         width="139"
         height="197"
-        loading="lazy"
       />
     </picture>
   </div>
