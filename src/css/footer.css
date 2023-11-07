@@ -1,6 +1,6 @@
 .footer {
-  background-color: #1C2225;
-  border-top: 1px solid rgba(252, 249, 249, 0.10);
+  background-color: #1c2225;
+  border-top: 1px solid rgba(252, 249, 249, 0.1);
   padding-top: 40px;
   padding-bottom: 292px;
   background-image: url(../img/footer/footer-ornament-mobile-tablet.png);
@@ -8,11 +8,27 @@
   background-size: 452px 401px;
   background-repeat: no-repeat;
 }
+/* .webp */
+@supports (
+  background-image: url('../img/footer/footer-ornament-mobile-tablet.webp')
+) {
+  .footer {
+    background-image: url('../img/footer/footer-ornament-mobile-tablet.webp');
+  }
+}
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .footer {
     background-image: url(../img/footer/footer-ornament-mobile-tablet@2x.png);
+  }
+  /* .webp */
+  @supports (
+    background-image: url('../img/footer/footer-ornament-mobile-tablet@2x.webp')
+  ) {
+    .footer {
+      background-image: url('../img/footer/footer-ornament-mobile-tablet@2x.webp');
+    }
   }
 }
 .footer-list {
@@ -26,7 +42,7 @@
   margin-right: 50px;
 }
 .footer-link {
-  color: #FCF9F9;
+  color: #fcf9f9;
   font-family: Manrope;
   font-size: 14px;
   font-weight: 400;
@@ -36,11 +52,11 @@
 }
 .footer-link:hover,
 .footer-link:focus {
-  color: #ECD979; 
+  color: #ecd979;
 }
 .footer-text {
   width: 335px;
-  color: #FCF9F9;
+  color: #fcf9f9;
   font-family: Manrope;
   font-size: 44px;
   font-style: normal;
@@ -49,7 +65,7 @@
   letter-spacing: -1.32px;
 }
 .footer-text-accent {
-  color: #ECD979;
+  color: #ecd979;
 }
 .footer-ornament-img {
   width: 100%;
@@ -104,11 +120,25 @@
     background-position: top -60px left calc(50% + 600px);
     background-size: 595px 528px;
   }
+  /* .webp */
+  @supports (background-image: url('../img/footer/footer-ornament-desk.webp')) {
+    .footer {
+      background-image: url('../img/footer/footer-ornament-desk.webp');
+    }
+  }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .footer {
       background-image: url(../img/footer/footer-ornament-desk@2x.png);
+    }
+    /* .webp */
+    @supports (
+      background-image: url('../img/footer/footer-ornament-desk@2x.webp')
+    ) {
+      .footer {
+        background-image: url('../img/footer/footer-ornament-desk@2x.webp');
+      }
     }
   }
   .footer-list {
