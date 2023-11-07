@@ -21,44 +21,86 @@
     </div>
     <picture>
       <!-- Desktop 1440px -->
+      <!-- .webp -->
+      <source
+        media="(min-width:1440px)"
+        srcset="
+          ./img/about/photo-about-desk1440.webp    1x,
+          ./img/about/photo-about-desk1440@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <!-- .jpg -->
       <source
         media="(min-width:1440px)"
         srcset="
           ./img/about/photo-about-desk1440.jpg    1x,
           ./img/about/photo-about-desk1440@2x.jpg 2x
         "
+        type="image/jpg"
       />
       <!-- Desktop -->
+      <!-- .webp -->
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          ./img/about/photo-about-desk.webp    1x,
+          ./img/about/photo-about-desk@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <!-- .jpg -->
       <source
         media="(min-width:1280px)"
         srcset="
           ./img/about/photo-about-desk.jpg    1x,
           ./img/about/photo-about-desk@2x.jpg 2x
         "
+        type="image/jpg"
       />
       <!-- Tablet -->
+      <!-- .webp -->
+      <source
+        media="(min-width:768px)"
+        srcset="
+          ./img/about/photo-about-tab.webp    1x,
+          ./img/about/photo-about-tab@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <!-- .jpg -->
       <source
         media="(min-width:768px)"
         srcset="
           ./img/about/photo-about-tab.jpg    1x,
           ./img/about/photo-about-tab@2x.jpg 2x
         "
+        type="image/jpg"
       />
       <!--Mobile-->
+      <!-- .webp -->
+      <source
+        media="(max-width:767.98px)"
+        srcset="
+          ./img/about/photo-about-mob.webp    1x,
+          ./img/about/photo-about-mob@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <!-- .jpg -->
       <source
         media="(max-width:767.98px)"
         srcset="
           ./img/about/photo-about-mob.jpg    1x,
           ./img/about/photo-about-mob@2x.jpg 2x
         "
+        type="image/jpg"
       />
       <img
         class="about-img"
         src="./img/about/photo-about-mob.jpg"
         alt="vyshyvanka"
         width="280"
-        height="450"
-        loading="lazy"
       />
     </picture>
   </div>
