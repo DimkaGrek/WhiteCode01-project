@@ -87,33 +87,8 @@
     row-gap: 40px;
   }
 }
-
-.collection-image {
-  width: 335px;
-  height: 400px;
-}
-
 .our-collection-image {
   border-radius: 4px;
-}
-
-@media only screen and (min-width: 768px) {
-  .our-collection-image {
-    width: 342px;
-    height: 430px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .our-collection-image {
-    width: 347px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .our-collection-image {
-    width: 400px;
-  }
 }
 
 .our-collection-item {
