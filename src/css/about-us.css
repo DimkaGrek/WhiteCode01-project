@@ -2,10 +2,16 @@
   padding: 0 0 80px 0;
   background-color: #1c2225;
 
-  background-image: url(../img/about/ornament-about.png);
+  background-image: url('../img/about/ornament-about.png');
   background-repeat: no-repeat;
   background-size: 459px 408px;
   background-position: bottom 18px left calc(50% + 166px);
+}
+/* .webp */
+@supports (background-image: url('../img/about/ornament-about.webp')) {
+  .about-us {
+    background-image: url('../img/about/ornament-about.webp');
+  }
 }
 
 /* Tablet */
@@ -25,16 +31,41 @@
 /* Background */
 @media only screen and (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
   .about-us {
-    background-image: url(../img/about/ornament-about@2x.png);
+    background-image: url('../img/about/ornament-about@2x.png');
+  }
+  /* .webp */
+  @supports (background-image: url('../img/about/ornament-about@2x.webp')) {
+    .about-us {
+      background-image: url('../img/about/ornament-about@2x.webp');
+    }
   }
 }
 
 @media only screen and (min-width: 768px) {
   .about-us {
-    background-image: url(../img/about/ornament-about-tab.png);
+    background-image: url('../img/about/ornament-about-tab.png');
     background-repeat: no-repeat;
     background-size: 545px 484px;
     background-position: bottom 50px left calc(50% + 286px);
+  }
+  /* .webp */
+  @supports (background-image: url('../img/about/ornament-about-tab.webp')) {
+    .about-us {
+      background-image: url('../img/about/ornament-about-tab.webp');
+    }
+  }
+  @media only screen and (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+    .about-us {
+      background-image: url('../img/about/ornament-about-tab@2x.png');
+    }
+    /* .webp */
+    @supports (
+      background-image: url('../img/about/ornament-about-tab@2x.webp')
+    ) {
+      .about-us {
+        background-image: url('../img/about/ornament-about-tab@2x.webp');
+      }
+    }
   }
 }
 

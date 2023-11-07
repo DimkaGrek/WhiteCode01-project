@@ -27,10 +27,22 @@
   background-position: center;
   background-size: contain;
 }
+/* .webp */
+@supports (background-image: url('../img/forms/woman-fon-mob.webp')) {
+  .order::before {
+    background-image: url('../img/forms/woman-fon-mob.webp');
+  }
+}
 @media screen and (min-resolution: 192dpi),
   screen and (min-device-pixel-ratio: 2) {
   .order::before {
     background-image: url('../img/forms/woman-fon-mob@2x.jpg');
+  }
+  /* .webp */
+  @supports (background-image: url('../img/forms/woman-fon-mob@2x.webp')) {
+    .order::before {
+      background-image: url('../img/forms/woman-fon-mob@2x.webp');
+    }
   }
 }
 @media screen and (min-width: 768px) {
@@ -39,10 +51,22 @@
     margin-bottom: 100px;
     background-image: url('../img/forms/woman-fon-tab.jpg');
   }
+  /* .webp */
+  @supports (background-image: url('../img/forms/woman-fon-tab.webp')) {
+    .order::before {
+      background-image: url('../img/forms/woman-fon-tab.webp');
+    }
+  }
   @media screen and (min-resolution: 192dpi),
     screen and (min-device-pixel-ratio: 2) {
     .order::before {
       background-image: url('../img/forms/woman-fon-tab@2x.jpg');
+    }
+    /* .webp */
+    @supports (background-image: url('../img/forms/woman-fon-tab@2x.webp')) {
+      .order::before {
+        background-image: url('../img/forms/woman-fon-tab@2x.webp');
+      }
     }
   }
 }
@@ -50,23 +74,47 @@
   .order::before {
     margin: 0 auto;
     margin-bottom: 150px;
-    background-image: url('../img/forms/women-fon-desk.jpg');
+    background-image: url('../img/forms/woman-fon-desk.jpg');
+  }
+  /* .webp */
+  @supports (background-image: url('../img/forms/woman-fon-desk.webp')) {
+    .order::before {
+      background-image: url('../img/forms/woman-fon-desk.webp');
+    }
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-device-pixel-ratio: 2) {
     .order::before {
       background-image: url('../img/forms/woman-fon-desk@2x.jpg');
     }
+    /* .webp */
+    @supports (background-image: url('../img/forms/woman-fon-desk@2x.webp')) {
+      .order::before {
+        background-image: url('../img/forms/woman-fon-desk@2x.webp');
+      }
+    }
   }
 }
 @media screen and (min-width: 1440px) {
   .order::before {
-    background-image: url('../img/forms/women-fon.jpg');
+    background-image: url('../img/forms/woman-fon.jpg');
+  }
+  /* .webp */
+  @supports (background-image: url('../img/forms/woman-fon.webp')) {
+    .order::before {
+      background-image: url('../img/forms/woman-fon.webp');
+    }
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-device-pixel-ratio: 2) {
     .order::before {
       background-image: url('../img/forms/woman-fon@2x.jpg');
+    }
+    /* .webp */
+    @supports (background-image: url('../img/forms/woman-fon@2x.webp')) {
+      .order::before {
+        background-image: url('../img/forms/woman-fon@2x.webp');
+      }
     }
   }
 }
@@ -236,6 +284,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  /* .webp */
+  @supports (background-image: url('../img/forms/ornament-forms.webp')) {
+    .order-bottom::after {
+      background-image: url('../img/forms/ornament-forms.webp');
+    }
   }
 }
 @media screen and (min-width: 1280px) {
