@@ -3,11 +3,6 @@
   padding: 20px 0;
   background-color: var(--black);
 }
-.header-fixed {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
 
 .header-menu {
   display: none;
