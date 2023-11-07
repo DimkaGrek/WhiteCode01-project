@@ -2,15 +2,6 @@
   <!-- ::before -->
   <div class="container order-container">
     <div class="order-top">
-      <img class="order-img" src="../img/forms/photo-forms.jpg" alt="girl" />
-      <img
-        class="ornament-img"
-        src="./img/forms/ornament-forms.png"
-        alt="ornament"
-      />
-      <!-- ::after -->
-    </div>
-    <div class="order-bottom">
       <h2 class="order-title">
         <span class="order-span">Your order</span> is our priority: Personalized
         approach and quality of service
@@ -50,10 +41,8 @@
             class="form-comment"
             name="user-comment"
             id="user-comment"
-            rows="4"
-            placeholder="Comment"
+            placeholder="Comments"
             required
-            minlength="7"
           ></textarea>
         </div>
         <button class="modal-button-form" type="submit" data-modal-send>
@@ -63,6 +52,42 @@
           </svg>
         </button>
       </form>
+    </div>
+    <div class="order-bottom">
+      <picture>
+        <!-- Desktop -->
+        <source
+          media="(min-width:1280px)"
+          srcset="
+            ./img/forms/photo-forms.jpg    1x,
+            ./img/forms/photo-forms@2x.jpg 2x
+          "
+          type="image/jpg"
+          width="524"
+          height="521"
+        />
+        <!-- Tablet -->
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./img/forms/photo-forms_tablet.jpg    1x,
+            ./img/forms/photo-forms_tablet@2x.jpg 2x
+          "
+          type="image/jpg"
+          width="638"
+          height="521"
+        />
+        <img
+          class="order-img"
+          src="./img/forms/photo-forms.jpg"
+          alt="girl"
+          width="524"
+          height="521"
+          loading="lazy"
+        />
+      </picture>
+
+      <!-- ::after -->
     </div>
   </div>
 </section>
