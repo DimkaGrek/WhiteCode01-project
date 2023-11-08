@@ -81,6 +81,7 @@
   color: var(--yellow);
 }
 .order-link {
+  position: relative;
   display: inline-block;
   padding: 14px 36px;
   color: var(--white);
@@ -90,10 +91,11 @@
   letter-spacing: -0.04em;
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-link:active {
-  border-color: var(--yellow);
+  color: var(--yellow);
+  transform: scale(1.1);
 }
 /* Tablet */
 @media only screen and (min-width: 768px) {
@@ -112,6 +114,7 @@
   .order-link:hover,
   .order-link:focus {
     border-color: var(--yellow);
+    transform: scale(1.1);
   }
 }
 .hero-span-icon {

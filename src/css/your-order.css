@@ -205,6 +205,7 @@
 
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  resize: none;
 }
 @media screen and (min-width: 768px) {
   .form-comment {
@@ -237,6 +238,7 @@
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
   margin: auto;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .modal-button-form {
@@ -249,6 +251,7 @@
 
 .modal-button-form:active {
   border-color: var(--yellow);
+  transform: scale(1.1);
 }
 
 .form-icon {
@@ -296,5 +299,10 @@
   .order-bottom::after {
     top: 155px;
     left: -321px;
+  }
+  .modal-button-form:hover,
+  .modal-button-form:active {
+    border-color: var(--yellow);
+    transform: scale(1.1);
   }
 }
